@@ -46,7 +46,9 @@ body,
     font-size: .75rem;
 }
 /* @ TODO: Trovare dimensioni giuste per modificare padding btn-sm o trovare soluzione alternativa */
-
+.btn-sm {
+    
+}
 
 
 
