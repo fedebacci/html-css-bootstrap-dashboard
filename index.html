@@ -71,7 +71,125 @@
 
 
     <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
 
+                    <!-- @TODO: testare anche con nested row (quasi sicuramente non necessario, per non dire sbagliato) -->
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <h2 class="fs-5">
+                            Catalogo Libri
+                        </h2>
+                        <button class="btn btn-sm btn-primary">
+                            Aggiungi Libro
+                        </button>
+                    </div>
+
+
+                    <table class="table table-striped" id="books-catalog-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Titolo
+                                </th>
+                                <th scope="col" class="d-none d-md-table-cell">
+                                    Data prestito
+                                </th>
+                                <th scope="col">
+                                    Stato
+                                </th>
+                                <th scope="col" class="text-center">
+                                    Azioni
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    AAAA
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    -
+                                </td>
+                                <td>
+                                    <span class="badge bg-secondary">
+                                        Disponibile
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    AAAA
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    GG/MM/AAAA
+                                </td>
+                                <td>
+                                    <span class="badge bg-warning">
+                                        In prestito
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    AAAA
+                                </td>
+                                <td class="d-none d-md-table-cell">
+                                    -
+                                </td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Non disponibile
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+
+
+                            <!-- <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-12 col-lg-3">
+
+                </div>
+            </div>
+        </div>
     </main>
 
 

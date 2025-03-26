@@ -35,3 +35,34 @@ section {
 #header-logo img {
     max-height: 3rem;
 }
+
+
+
+/* MAIN */
+#books-catalog-table,
+#books-catalog-table .btn-sm i {
+    font-size: .75rem;
+}
+/* @ TODO: Trovare dimensioni giuste per modificare padding btn-sm o trovare soluzione alternativa */
+
+
+
+
+
+
+
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    #books-catalog-table,
+    #books-catalog-table .btn-sm i {
+        font-size: .85rem;
+    }
+}
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    #books-catalog-table,
+    #books-catalog-table .btn-sm i {
+        font-size: .75rem;
+    }
+}
