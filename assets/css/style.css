@@ -39,7 +39,9 @@ section {
 
 
 /* MAIN */
-#books-catalog-table,
+/* @ TODO: Trovare selettori giusti per modificare font-size */
+body,
+.accordion-button,
 #books-catalog-table .btn-sm i {
     font-size: .75rem;
 }
@@ -54,14 +56,18 @@ section {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    #books-catalog-table,
+    /* @ TODO: Trovare selettori giusti per modificare font-size */
+    body,
+    .accordion-button,
     #books-catalog-table .btn-sm i {
         font-size: .85rem;
     }
 }
 /* DESKTOP */
 @media screen and (min-width: 992px) {
-    #books-catalog-table,
+    /* @ TODO: Trovare selettori giusti per modificare font-size */
+    body,
+    .accordion-button,
     #books-catalog-table .btn-sm i {
         font-size: .75rem;
     }
