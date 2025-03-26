@@ -28,3 +28,10 @@
 section {
     padding: calc(2 * var(--section-spacing)) 0;
 }
+
+
+
+/* HEADER */
+#header-logo img {
+    max-height: 3rem;
+}
