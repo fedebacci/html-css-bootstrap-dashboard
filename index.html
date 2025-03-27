@@ -80,8 +80,16 @@
                         <h2 class="fs-5">
                             Catalogo Libri
                         </h2>
-                        <button class="btn btn-sm btn-primary">
+                        <!-- <button class="btn btn-sm btn-primary">
                             Aggiungi Libro
+                        </button> -->
+                        <!-- <a class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" href="#addbook" role="button"
+                            aria-controls="addbook">
+                            Aggiungi libro
+                        </a> -->
+                        <button class="btn btn-sm btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#addbook" aria-controls="addbook">
+                            Aggiungi libro
                         </button>
                     </div>
 
@@ -104,7 +112,6 @@
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
                                 <td>
                                     I pilastri della terra
@@ -456,6 +463,115 @@
     </main>
 
 
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, odit itaque sint deserunt atque
+                        architecto facere accusantium quo mollitia optio praesentium temporibus non quibusdam expedita.
+                        Eligendi
+                        tempora nesciunt voluptatem obcaecati!</p>
+                    <p>Iusto magnam illum minima nesciunt possimus voluptatem! Corporis impedit iste voluptas, adipisci
+                        odit
+                        quia delectus, magni inventore quod hic veritatis obcaecati numquam quam, ipsum laboriosam
+                        pariatur
+                        quaerat atque nulla asperiores?</p>
+                    <p>Delectus quidem minima laboriosam sequi ut assumenda possimus maiores quo, fugit temporibus magni
+                        eligendi eveniet. Iste ab sit neque, voluptas ut voluptatibus quasi eligendi, aliquam voluptate
+                        deleniti
+                        itaque omnis ea.</p>
+                    <p>Repudiandae laudantium voluptas earum eos aut, architecto ea pariatur nesciunt voluptatum ullam
+                        nam quasi
+                        magnam dolore quidem voluptatibus culpa eum, id expedita soluta veniam cupiditate! Debitis
+                        aliquam
+                        cumque sint numquam.</p>
+                    <p>Quos delectus exercitationem quae ullam, nobis in nulla mollitia earum repellendus tempore
+                        provident
+                        facilis consectetur adipisci eveniet itaque voluptatibus! Omnis voluptate odio dolores eos
+                        debitis
+                        adipisci enim nesciunt facere aliquam?</p>
+                    <p>Deserunt atque hic delectus doloribus labore voluptatibus impedit ullam, et vel provident omnis
+                        voluptatem asperiores laudantium fugiat possimus odit fuga voluptatum necessitatibus amet est
+                        laboriosam
+                        reprehenderit quod. Quos, voluptatem cumque?</p>
+                    <p>Deleniti autem aspernatur amet, laudantium dolores aliquam pariatur vero ut vitae quas provident
+                        temporibus tempore consequatur, reprehenderit error! Sed nam odio quasi sunt libero aliquam,
+                        modi
+                        eveniet earum maxime dicta!</p>
+                    <p>Numquam sequi quidem omnis cupiditate reiciendis tempore aperiam minima, nostrum ipsam aspernatur
+                        consectetur accusantium quisquam dolores perspiciatis necessitatibus illum tempora incidunt
+                        officia
+                        consequatur corrupti et distinctio. Odio animi cupiditate minus.</p>
+                    <p>Quod debitis ipsa libero voluptatem, eum cupiditate alias, quibusdam quo, perferendis corrupti
+                        dolores
+                        molestiae necessitatibus inventore architecto voluptates magnam pariatur possimus aperiam iure
+                        accusamus
+                        ex. Sapiente nemo fugit quaerat incidunt?</p>
+                    <p>Ipsum et velit suscipit ad praesentium hic deleniti facere, dolor asperiores reiciendis earum
+                        soluta
+                        corporis veritatis autem voluptatibus quibusdam, cum adipisci voluptate illo. Temporibus,
+                        magnam. Quod,
+                        officia! At, fuga doloribus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="addbook" aria-labelledby="addbooklabel"
+        data-bs-scroll="true" data-bs-theme="dark" data-bs-backdrop="static">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="addbooklabel">
+                Aggiungi un libro
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi"></button>
+        </div>
+        <div class="offcanvas-body">
+
+
+
+            <!-- <form action="https://www.google.com"> -->
+            <!-- <form method="GET"> -->
+            <!-- <form method="POST"> -->
+            <form>
+                <div class="mb-3">
+                    <label for="bookName" class="form-label">
+                        Nome del libro
+                    </label>
+                    <input type="text" class="form-control" id="bookName" name="bookName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="borrowDate" class="form-label">
+                        Data del prestito
+                    </label>
+                    <input type="date" class="form-control" id="borrowDate" name="borrowDate">
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Stato" id="selectBookState" name="selectBookState">
+                        <option selected value="toBeSelected">Seleziona lo stato del libro</option>
+                        <option value="available">Disponibile</option>
+                        <option value="borrowed">In prestito</option>
+                        <option value="notAvailable">Non disponibile</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Aggiungi
+                </button>
+            </form>
+
+
+
+
+        </div>
+    </div>
 
 
 
