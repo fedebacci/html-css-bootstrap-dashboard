@@ -465,61 +465,6 @@
 
 
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, odit itaque sint deserunt atque
-                        architecto facere accusantium quo mollitia optio praesentium temporibus non quibusdam expedita.
-                        Eligendi
-                        tempora nesciunt voluptatem obcaecati!</p>
-                    <p>Iusto magnam illum minima nesciunt possimus voluptatem! Corporis impedit iste voluptas, adipisci
-                        odit
-                        quia delectus, magni inventore quod hic veritatis obcaecati numquam quam, ipsum laboriosam
-                        pariatur
-                        quaerat atque nulla asperiores?</p>
-                    <p>Delectus quidem minima laboriosam sequi ut assumenda possimus maiores quo, fugit temporibus magni
-                        eligendi eveniet. Iste ab sit neque, voluptas ut voluptatibus quasi eligendi, aliquam voluptate
-                        deleniti
-                        itaque omnis ea.</p>
-                    <p>Repudiandae laudantium voluptas earum eos aut, architecto ea pariatur nesciunt voluptatum ullam
-                        nam quasi
-                        magnam dolore quidem voluptatibus culpa eum, id expedita soluta veniam cupiditate! Debitis
-                        aliquam
-                        cumque sint numquam.</p>
-                    <p>Quos delectus exercitationem quae ullam, nobis in nulla mollitia earum repellendus tempore
-                        provident
-                        facilis consectetur adipisci eveniet itaque voluptatibus! Omnis voluptate odio dolores eos
-                        debitis
-                        adipisci enim nesciunt facere aliquam?</p>
-                    <p>Deserunt atque hic delectus doloribus labore voluptatibus impedit ullam, et vel provident omnis
-                        voluptatem asperiores laudantium fugiat possimus odit fuga voluptatum necessitatibus amet est
-                        laboriosam
-                        reprehenderit quod. Quos, voluptatem cumque?</p>
-                    <p>Deleniti autem aspernatur amet, laudantium dolores aliquam pariatur vero ut vitae quas provident
-                        temporibus tempore consequatur, reprehenderit error! Sed nam odio quasi sunt libero aliquam,
-                        modi
-                        eveniet earum maxime dicta!</p>
-                    <p>Numquam sequi quidem omnis cupiditate reiciendis tempore aperiam minima, nostrum ipsam aspernatur
-                        consectetur accusantium quisquam dolores perspiciatis necessitatibus illum tempora incidunt
-                        officia
-                        consequatur corrupti et distinctio. Odio animi cupiditate minus.</p>
-                    <p>Quod debitis ipsa libero voluptatem, eum cupiditate alias, quibusdam quo, perferendis corrupti
-                        dolores
-                        molestiae necessitatibus inventore architecto voluptates magnam pariatur possimus aperiam iure
-                        accusamus
-                        ex. Sapiente nemo fugit quaerat incidunt?</p>
-                    <p>Ipsum et velit suscipit ad praesentium hic deleniti facere, dolor asperiores reiciendis earum
-                        soluta
-                        corporis veritatis autem voluptatibus quibusdam, cum adipisci voluptate illo. Temporibus,
-                        magnam. Quod,
-                        officia! At, fuga doloribus.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
 
 
@@ -599,8 +544,9 @@
                         <label for="bookNotes" class="form-label">
                             Note
                         </label>
-                        <input type="textarea" class="form-control" id="bookNotes" name="bookNotes"
+                        <textarea class="form-control" id="bookNotes" name="bookNotes"
                             placeholder="Inserisci eventuali note sul libro">
+                        </textarea>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
@@ -638,16 +584,16 @@
                     <input type="date" class="form-control" id="borrowDate" name="borrowDate">
                 </div>
                 <div class="mb-5">
-                    <label for="selectBookState" class="form-label">
+                    <label for="bookState" class="form-label">
                         Stato del libro
                     </label>
-                    <select class="form-select" aria-label="Stato" id="selectBookState" name="selectBookState" required>
+                    <select class="form-select" aria-label="Stato" id="bookState" name="bookState" required>
                         <option selected></option>
                         <option value="available">Disponibile</option>
                         <option value="borrowed">In prestito</option>
                         <option value="notAvailable">Non disponibile</option>
                     </select>
-                    <div id="selectBookStateRequired" class="form-text text-danger">Dato obbligatorio</div>
+                    <div id="bookStateRequired" class="form-text text-danger">Dato obbligatorio</div>
                 </div>
                 <button type="submit" class="btn btn-primary custom-btn-block">
                     Aggiungi
@@ -666,6 +612,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
