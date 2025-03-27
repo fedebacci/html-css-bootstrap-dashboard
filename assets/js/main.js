@@ -1,24 +1,34 @@
 window.addEventListener('load', checkBookToAdd())
 
 
-
-
-
 function checkBookToAdd() {
-    console.log(window.location.href)
     if (window.location.href.includes('bookName')) {
 
+        var bookNameToAdd = window.location.href.split('&').find((element) => element.includes('bookName')).split('=')[1]
+        console.log('bookNameToAdd', bookNameToAdd)
+        
+        if (window.location.href.includes('borrowDate')) {
+            var borrowDateToAdd = window.location.href.split('&').find((element) => element.includes('borrowDate')).split('=')[1]
+            console.log('borrowDateToAdd', borrowDateToAdd)
+        } else {
+            var borrowDateToAdd = null
+        }
 
-        let bookNameToAdd = window.location.href.split('&').find((element) => element.includes('bookName')).split('=')[1]
-        console.log(bookNameToAdd)
-
-        addBook(bookNameToAdd)
+        if (window.location.href.includes('bookState')) {
+            var bookStateToAdd = window.location.href.split('&').find((element) => element.includes('bookState')).split('=')[1]
+            console.log('bookStateToAdd', bookStateToAdd)
+        } else {
+            var bookStateToAdd = null
+        }
+        addBook(bookNameToAdd, borrowDateToAdd, bookStateToAdd)
     }
 }
 
 
 
+
 function addBook(bookName, borrowDate, bookState) {
+
     console.log('AGGIUNGO LIBRO:', bookName, borrowDate, bookState)
     
     let newBookRow = document.createElement('tr')
@@ -29,7 +39,7 @@ function addBook(bookName, borrowDate, bookState) {
     let borrowDateCell = document.createElement('td')
     borrowDateCell.classList.add('d-none')
     borrowDateCell.classList.add('d-md-table-cell')
-    if (borrowDate != undefined) {
+    if (borrowDate != undefined && borrowDate != '') {
         borrowDateCell.innerText = borrowDate
     } else {
         borrowDateCell.innerText = '-'
@@ -39,15 +49,21 @@ function addBook(bookName, borrowDate, bookState) {
     let bookStateBadge = document.createElement('span')
     bookStateBadge.classList.add('badge')
     switch (bookState) {
-        case 'borrowed':
+        case "available":
+            bookStateBadge.classList.add('bg-secondary')
+            bookStateBadge.innerText = 'Non disponibile';
+            break;
+        case "borrowed":
             bookStateBadge.classList.add('bg-warning')
-            bookStateBadge.innerText = 'In prestito'
-        case 'notAvailable':
+            bookStateBadge.innerText = 'In prestito';
+            break;
+        case "notAvailable":
             bookStateBadge.classList.add('bg-danger')
-            bookStateBadge.innerText = 'Non disponibile'
+            bookStateBadge.innerText = 'Non disponibile';
+            break;
         default:
             bookStateBadge.classList.add('bg-secondary')
-            bookStateBadge.innerText = 'Disponibile'
+            bookStateBadge.innerText = 'Disponibile';
     }
     bookStateCell.appendChild(bookStateBadge)
 
@@ -60,21 +76,13 @@ function addBook(bookName, borrowDate, bookState) {
         <button class="btn btn-sm btn-outline-secondary">
             <i class="fa-solid fa-trash"></i>
         </button>
-    `
-        
+    `        
 
     newBookRow.appendChild(bookNameCell)
     newBookRow.appendChild(borrowDateCell)
     newBookRow.appendChild(bookStateCell)
     newBookRow.appendChild(bookActionsCell)
 
-    console.log('newBookRow', newBookRow)
-    console.log('newBookRow.innerHTML', newBookRow.innerHTML)
-
-
-
     let booksTable = document.getElementById('books-catalog-table')
-    console.log('booksTable.children[1]', booksTable.children[1])
-
     booksTable.children[1].insertBefore(newBookRow, booksTable.children[1].firstChild)
 }
