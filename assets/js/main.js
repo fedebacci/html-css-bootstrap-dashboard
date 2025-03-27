@@ -2,20 +2,22 @@ window.addEventListener('load', checkBookToAdd())
 
 
 function checkBookToAdd() {
+    console.log('checkBookToAdd URL', window.location.href)
+    console.log('checkBookToAdd URL', decodeURI(window.location.href))
     if (window.location.href.includes('bookName')) {
 
-        var bookNameToAdd = window.location.href.split('&').find((element) => element.includes('bookName')).split('=')[1]
+        var bookNameToAdd = decodeURI(window.location.href).split('&').find((element) => element.includes('bookName')).split('=')[1]
         console.log('bookNameToAdd', bookNameToAdd)
         
         if (window.location.href.includes('borrowDate')) {
-            var borrowDateToAdd = window.location.href.split('&').find((element) => element.includes('borrowDate')).split('=')[1].split("-").reverse().join("/")
+            var borrowDateToAdd = decodeURI(window.location.href).split('&').find((element) => element.includes('borrowDate')).split('=')[1].split("-").reverse().join("/")
             console.log('borrowDateToAdd', borrowDateToAdd)
         } else {
             var borrowDateToAdd = null
         }
 
         if (window.location.href.includes('bookState')) {
-            var bookStateToAdd = window.location.href.split('&').find((element) => element.includes('bookState')).split('=')[1]
+            var bookStateToAdd = decodeURI(window.location.href).split('&').find((element) => element.includes('bookState')).split('=')[1]
             console.log('bookStateToAdd', bookStateToAdd)
         } else {
             var bookStateToAdd = null
