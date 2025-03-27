@@ -539,10 +539,91 @@
 
 
 
+
+
+            <form>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <label for="authorName" class="form-label">
+                            Nome autore
+                        </label>
+                        <input type="text" class="form-control" id="authorName" name="authorName"
+                            placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6">
+                        <label for="authorLastName" class="form-label">
+                            Cognome autore
+                        </label>
+                        <input type="text" class="form-control" id="authorLastName" name="authorLastName"
+                            placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                    <div class="col-12">
+                        <label for="bookName" class="form-label">
+                            Titolo
+                        </label>
+                        <input type="text" class="form-control" id="bookName" name="bookName"
+                            placeholder="Inserisci il titolo del libro" required>
+                        <div id="bookNameInfo" class="form-text">
+                            Titolo versione italiana <span class="text-danger">(Dato obbligatorio)</span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="bookGenre" class="form-label">
+                            Titolo
+                        </label>
+                        <select class="form-select" aria-label="Genere" id="bookGenre" name="bookGenre">
+                            <option selected value="">Scegli il genere</option>
+                            <option value="available">Giallo</option>
+                            <option value="borrowed">Romanzo</option>
+                            <option value="notAvailable">Fantascienza</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="bookYear" class="form-label">
+                            Anno di pubblicazione
+                        </label>
+                        <input type="text" class="form-control" id="bookYear" name="bookYear"
+                            placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col-12">
+                        <label for="bookISBN" class="form-label">
+                            ISBN#
+                        </label>
+                        <input type="text" class="form-control" id="bookISBN" name="bookISBN"
+                            placeholder="Inserisci il codice ISBN#">
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                    <div class="col-12">
+                        <label for="bookNotes" class="form-label">
+                            Note
+                        </label>
+                        <input type="textarea" class="form-control" id="bookNotes" name="bookNotes"
+                            placeholder="Inserisci eventuali note sul libro">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="digitalAvailability">
+                            <label class="form-check-label" for="digitalAvailability">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-sm btn-primary">
+                            Aggiungi Libro
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+
+
             <!-- <form action="https://www.google.com"> -->
             <!-- <form method="GET"> -->
             <!-- <form method="POST"> -->
-            <form>
+            <!-- <form>
                 <div class="mb-3">
                     <label for="bookName" class="form-label">
                         Nome del libro
@@ -561,7 +642,6 @@
                         Stato del libro
                     </label>
                     <select class="form-select" aria-label="Stato" id="selectBookState" name="selectBookState" required>
-                        <!-- <option selected value="toBeSelected">Seleziona lo stato del libro</option> -->
                         <option selected></option>
                         <option value="available">Disponibile</option>
                         <option value="borrowed">In prestito</option>
@@ -572,7 +652,7 @@
                 <button type="submit" class="btn btn-primary custom-btn-block">
                     Aggiungi
                 </button>
-            </form>
+            </form> -->
 
 
 

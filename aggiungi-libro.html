@@ -75,29 +75,23 @@
             <div class="row">
                 <div class="col-12">
 
-
-
-                    <!-- @ TODO: Decidere se fare spaziature per bene con gutters o mantenere righe separate e spaziare con margine inferiore colonne (dipende da possibilità di centralizzazione dello spazio verticale oppure della dimensione delle colonne) -->
-                    <!-- SCELTA: UTILIZZARE GUTTERS INVECE CHE MARGINI INFERIORI -->
                     <form>
-                        <div class="row">
-                            <div class="col-6 mb-3">
+                        <div class="row g-3">
+                            <div class="col-6">
                                 <label for="authorName" class="form-label">
                                     Nome autore
                                 </label>
                                 <input type="text" class="form-control" id="authorName" name="authorName"
                                     placeholder="Inserisci il nome dell'autore">
                             </div>
-                            <div class="col-6 mb-3">
+                            <div class="col-6">
                                 <label for="authorLastName" class="form-label">
                                     Cognome autore
                                 </label>
                                 <input type="text" class="form-control" id="authorLastName" name="authorLastName"
                                     placeholder="Inserisci il cognome dell'autore">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 mb-3">
+                            <div class="col-12">
                                 <label for="bookName" class="form-label">
                                     Titolo
                                 </label>
@@ -107,9 +101,7 @@
                                     Titolo versione italiana <span class="text-danger">(Dato obbligatorio)</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-lg-3">
-                            <div class="col mb-3">
+                            <div class="col-12 col-lg-4">
                                 <label for="bookGenre" class="form-label">
                                     Titolo
                                 </label>
@@ -120,38 +112,31 @@
                                     <option value="notAvailable">Fantascienza</option>
                                 </select>
                             </div>
-                            <div class="col mb-3">
+                            <div class="col-12 col-lg-4">
                                 <label for="bookYear" class="form-label">
                                     Anno di pubblicazione
                                 </label>
-                                <!-- <input type="number" class="form-control" id="bookYear" name="bookYear" -->
                                 <input type="text" class="form-control" id="bookYear" name="bookYear"
                                     placeholder="Inserisci l'anno">
                             </div>
-                            <div class="col mb-3">
+                            <div class="col-12 col-lg-4">
                                 <label for="bookISBN" class="form-label">
                                     ISBN#
                                 </label>
                                 <input type="text" class="form-control" id="bookISBN" name="bookISBN"
                                     placeholder="Inserisci il codice ISBN#">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 mb-3">
+                            <div class="col-12">
                                 <hr />
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 mb-3">
+                            <div class="col-12">
                                 <label for="bookNotes" class="form-label">
                                     Note
                                 </label>
                                 <input type="textarea" class="form-control" id="bookNotes" name="bookNotes"
                                     placeholder="Inserisci eventuali note sul libro">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 mb-3">
+                            <div class="col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="digitalAvailability">
                                     <label class="form-check-label" for="digitalAvailability">
@@ -159,8 +144,6 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-12">
                                 <button type="submit" class="btn btn-sm btn-primary">
                                     Aggiungi Libro
