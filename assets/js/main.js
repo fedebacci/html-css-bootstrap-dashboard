@@ -8,7 +8,7 @@ function checkBookToAdd() {
         console.log('bookNameToAdd', bookNameToAdd)
         
         if (window.location.href.includes('borrowDate')) {
-            var borrowDateToAdd = window.location.href.split('&').find((element) => element.includes('borrowDate')).split('=')[1]
+            var borrowDateToAdd = window.location.href.split('&').find((element) => element.includes('borrowDate')).split('=')[1].split("-").reverse().join("/")
             console.log('borrowDateToAdd', borrowDateToAdd)
         } else {
             var borrowDateToAdd = null
